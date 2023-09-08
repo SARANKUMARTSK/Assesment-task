@@ -1,0 +1,37 @@
+<!--Question a : Print odd numbers in an array
+
+answer :1.a. Anonymous Function  -->
+<script>
+let array=[5,6,7,8,9];
+let odd = function(array) {
+   for(i=0;i<array.length;i++)
+   if(array[i]%2!=0) {
+    console.log(array[i])
+   }
+}
+odd(array)
+</script>
+
+<!-- answer :1.a.IIFE FUNCTION  -->
+<script>
+(function(array) {
+for(i=0;i<array.length;i++)
+if(array[i]%2!=0) {
+console.log(array[i])
+}
+}
+)
+([1,2,3,4,5])
+</script>
+
+<!-- answer : 2.a.Arrow Function -->
+<script>
+let arr = [2,3,4,5,6]
+oddNumbers=(arr)=>{
+    for(i=0;i<arr.length;i++)
+    if(i%2!=0){
+        console.log(arr[i])
+    }
+}
+oddNumbers(arr)
+</script>
